@@ -14,9 +14,21 @@ public class LineComparisonProblem {
 		int y1 = 6;
 		int y2 = 10;
 		
-		double length_of_line = Math.sqrt((y2 - y1) * (y2 - y1) + (x2 - x1) * (x2 - x1));
+		int x3 = 4;
+		int x4 = 6;
+		int y3 = 8;
+		int y4 = 12;
 		
-		System.out.println("length of the line = " +length_of_line);
+		Integer line1 = (int) Math.sqrt((y2 - y1) * (y2 - y1) + (x2 - x1) * (x2 - x1));
+		
+		Integer line2 = (int) Math.sqrt((y2 - y1) * (y2 - y1) + (x2 - x1) * (x2 - x1));
+
+		if(line1.equals(line2))
+			
+			System.out.println("Lengths of both the lines are equal");
+		
+		else
+			System.out.println("Not equal");
 		
 	}
 	
